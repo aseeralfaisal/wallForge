@@ -1,0 +1,22 @@
+{
+  "name": "discord-getting-started",
+  "private": true,
+  "version": "1.0.0",
+  "description": "WallForge",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "register": "node src/commands.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Aseer Al Faisal",
+  "dependencies": {
+    "discord-interactions": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
