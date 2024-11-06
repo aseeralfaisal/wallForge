@@ -1,22 +1,17 @@
-import { BASE_URL, IMAGES_API_KEY } from "@config";
 import axios from "axios";
+import { BASE_URL, IMAGES_API_KEY } from "@config";
 
-const baseURL = BASE_URL;
 const apiInstance = axios.create({
-  baseURL
+  baseURL: BASE_URL
 });
+const { interceptors } = apiInstance;
 
-apiInstance.interceptors.request.use(function(config) {
+interceptors.request.use((config) => {
   config.headers.Authorization = IMAGES_API_KEY;
   return config;
-}, function(error) {
-  return Promise.reject(error);
-});
+}, (error) => Promise.reject(error));
 
-apiInstance.interceptors.response.use(function(response) {
-  return response;
-}, function(error) {
-  return Promise.reject(error);
-});
+interceptors.response.use((response) => response,
+  (error) => Promise.reject(error));
 
 export { apiInstance }
