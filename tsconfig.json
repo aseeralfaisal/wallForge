@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@commands": ["./src/interactions/commands/index.js"],
+      "@replies": ["./src/interactions/replies/index.js"],
+      "@config": ["./src/config.js"]
+    }
+  }
+}
