@@ -12,6 +12,7 @@
       "@commands": ["./src/interactions/commands/index.js"],
       "@replies": ["./src/interactions/replies/index.js"],
       "@config": ["./src/config.js"]
+      "@apiInstance": ["./src/apiInstance.js"]
     }
   }
 }
