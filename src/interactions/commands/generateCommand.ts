@@ -3,7 +3,7 @@ import { SlashCommandBuilder, SlashCommandStringOption } from "discord.js";
 const generateCommand = new SlashCommandBuilder();
 
 generateCommand
-  .setName('generate')
+  .setName('genwall')
   .setDescription("generate wallpaper")
   .addStringOption((option: SlashCommandStringOption) =>
     option
