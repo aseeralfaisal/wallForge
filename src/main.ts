@@ -13,7 +13,7 @@ client.on('interactionCreate', async (interaction) => {
 
   const commands: { [key: string]: (interaction: ChatInputCommandInteraction<CacheType>) => void } = {
     "poke": pokeReply,
-    "generate": generateReply
+    "genwall": generateReply
   }
   const { commandName }: { commandName: string } = interaction;
 

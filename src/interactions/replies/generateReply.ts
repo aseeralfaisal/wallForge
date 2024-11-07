@@ -1,4 +1,4 @@
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ChatInputCommandInteraction, ComponentBuilder, EmbedBuilder, type CacheType } from "discord.js";
+import { ChatInputCommandInteraction, EmbedBuilder, type CacheType } from "discord.js";
 import { BASE_URL } from "@config";
 import { apiInstance } from "@apiInstance";
 

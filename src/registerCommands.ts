@@ -2,8 +2,6 @@ import { REST, Routes } from 'discord.js';
 import commands from '@commands';
 import { CLIENT_ID, TOKEN } from '@config';
 
-console.log(CLIENT_ID, TOKEN);
-
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 try {
