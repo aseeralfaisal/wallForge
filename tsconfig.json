@@ -9,10 +9,11 @@
       "node"
     ],
     "paths": {
-      "@commands": ["./src/interactions/commands/index.js"],
-      "@replies": ["./src/interactions/replies/index.js"],
-      "@config": ["./src/config.js"]
-      "@apiInstance": ["./src/apiInstance.js"]
+      "@commands": ["./src/interactions/commands/index.ts"],
+      "@replies": ["./src/interactions/replies/index.ts"],
+      "@config": ["./src/config.js"],
+      "@apiWallInstance": ["./src/interceptors/apiWallInstance.ts"],
+      "@apiLlmInstance": ["./src/interceptors/apiLlmInterceptor.ts"]
     }
   }
 }
