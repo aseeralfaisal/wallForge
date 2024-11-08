@@ -1,10 +1,10 @@
 import { ChatInputCommandInteraction, Client, GatewayIntentBits, type CacheType } from 'discord.js';
-import { generateReply, pokeReply } from '@replies';
+import { generateReply, pokeReply, quoteReply } from '@replies';
 import { TOKEN } from '@config';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-client.on('ready', () => {
+client.on('ready', async () => {
   console.log(`Logged in as ${client?.user?.tag}!`);
 });
 
@@ -13,7 +13,8 @@ client.on('interactionCreate', async (interaction) => {
 
   const commands: { [key: string]: (interaction: ChatInputCommandInteraction<CacheType>) => void } = {
     "poke": pokeReply,
-    "genwall": generateReply
+    "genwall": generateReply,
+    "quote": quoteReply
   }
   const { commandName }: { commandName: string } = interaction;
 

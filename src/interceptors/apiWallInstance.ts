@@ -1,8 +1,8 @@
 import axios from "axios";
-import { BASE_URL, IMAGES_API_KEY } from "@config";
+import { IMAGES_BASE_URL, IMAGES_API_KEY } from "@config";
 
 const apiInstance = axios.create({
-  baseURL: BASE_URL
+  baseURL: IMAGES_BASE_URL
 });
 const { interceptors } = apiInstance;
 
@@ -14,4 +14,4 @@ interceptors.request.use((config) => {
 interceptors.response.use((response) => response,
   (error) => Promise.reject(error));
 
-export { apiInstance }
+export { apiInstance };
